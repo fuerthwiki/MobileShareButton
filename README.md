@@ -1,2 +1,3 @@
 # MobileShareButton
-Add a mobile share button to each page 
+
+Add a mobile share button to each page.

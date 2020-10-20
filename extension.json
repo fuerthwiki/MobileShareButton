@@ -1,0 +1,38 @@
+{
+	"name": "MobileShareButton",
+	"version": "0.1.0",
+	"author": [
+		"Alexander Wunschik"
+	],
+	"url": "https://github.com/fuerthwiki/MobileShareButton",
+	"descriptionmsg": "Add a mobile share button to each page.",
+	"license-name": "AGPL-3.0",
+	"type": "other",
+	"AutoloadClasses": {
+		"MediaWiki\\Extension\\MobileShareButton\\Hooks": "MobileShareButton.hooks.php"
+	},
+	"Hooks": {
+		"BeforePageDisplayMobile": [
+			"MediaWiki\\Extension\\MobileShareButton\\Hooks::onBeforePageDisplayMobile"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "MobileShareButton/resources"
+	},
+	"ResourceModules": {
+		"mobile.sharebutton": {
+			"targets": [
+				"mobile"
+			],
+			"position": "top",
+			"styles": [
+				"sharebutton.less"
+			],
+			"scripts": [
+				"sharebutton.js"
+			]
+		}
+	},
+	"manifest_version": 1
+}
